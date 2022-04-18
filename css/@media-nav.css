@@ -1,0 +1,37 @@
+@media (max-width:768px){
+#mynavbar{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 700px !important;
+    height: auto;
+    background-color: indigo;
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: navbar-left 2s ease-in ;
+    transform: translateX(0);
+    display: none;
+}
+@keyframes navbar-left {
+    0%{transform: translateX(-110%);}
+    100%{
+        transform: translateX(0%);
+    
+    }
+}
+
+.navbar-item  {
+    min-width: 700px !important;
+    display: block;
+    text-align: center;
+    background-color: yellow !important;
+}
+.nav-link{
+ width: 100%;
+ margin-top: 0.5rem;
+    border: 1px solid black !important ;
+}
+}
