@@ -1,22 +1,26 @@
-// let navbar = document.getElementById('mynavbar');
-// let show =document.getElementById("show").addEventListener('click',()=>{
-// alert("hi")
-// });
 
 
-// let menu = document.querySelector('#menu-bar');
-// let navbar = document.querySelector('#mynavbar');
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('#mynavbar');
 
-// menu.onclick = () =>{
-// alert("df")
-// }
+menu.onclick = () =>{
+menu.classList.toggle('fa-times');
+navbar.classList.toggle('active');
+}
+ window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+    
+ }
+window.addEventListener("scroll" ,function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky" , window.scrollY > 0);
 
+    var downhead = document.querySelector(".down-head");
+    downhead.classList.toggle("stocky" , window.scrollY > 0);
+    
+    var button = document.querySelector(".mycolor");
+    button.classList.toggle("btn-outline-dark" ); 
+    button.classList.remove("btn-outline-secondary" );   
 
-// let menu = document.getElementById("menu-bar");
-// let navbar = document.getElementById("mynavbar");
-
-// menu.onclick = () =>{
-// alert("df")
-// }
-
-// navbar.style.display='block';
+});
