@@ -13,14 +13,19 @@ navbar.classList.toggle('active');
     
  }
 window.addEventListener("scroll" ,function(){
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky" , window.scrollY > 0);
+    var header = document.querySelector('header');
+    header.classList.toggle('sticky' , window.scrollY > 0);
 
-    var downhead = document.querySelector(".down-head");
+    var downhead = document.querySelector('.down-head');
     downhead.classList.toggle("stocky" , window.scrollY > 0);
     
-    var button = document.querySelector(".mycolor");
-    button.classList.toggle("btn-outline-dark" ); 
-    button.classList.remove("btn-outline-secondary" );   
+    var button = document.querySelector('.mycolor');
+    button.classList.toggle('btn-outline-dark' ); 
+    button.classList.remove('btn-outline-secondary' );   
 
+    var navbaritems = document.querySelector('.navbar');
+    navbaritems.classList.remove('navbar-dark');
+    navbaritems.classList.add('navbar-light' );
+    
+    
 });
