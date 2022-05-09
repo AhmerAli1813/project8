@@ -1,6 +1,6 @@
 .del{
     width: 100%;
-    height: 500px;
+    height: 1500px;
 }
 .flex{
 display: flex;
@@ -11,23 +11,29 @@ align-items: center;
     position: relative;
     height: 100Vh;
     background-color: gray;
-z-index: 0;  
+z-index: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;  
+
 
 }
 header{
     position:fixed;
     width: 93%;
-    height: 120px;
+    height: 140px;
     top: 20px;
     background-color: rgba(41, 41, 41, 0.815);
     transition: 0.6s;
     z-index: 5;
+    /* margin-left: auto !important; */
 }
 header.sticky{
     top: 5px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.232);
     color: black;
-    height: 80px;
+    height: 100px;
 }
 header::before{
     position: absolute;
@@ -45,28 +51,40 @@ header::before{
 }
 .up-head input[type="search"]{
     width: 80%;
-    
+    padding: 10px;
     background: none;
     outline: none;
     border: 2px solid rgb(28 48 53);
     color: white;
+    box-shadow:  0 0 20px black;
     
 }
 .up-head .my-btn{
-    padding: 0 15px;
+    padding: 10px 15px;
+    border: 1px solid rgb(28 48 53);
+    box-shadow:0 0 20px rgb(0,0,0), 1px 2px 3px rgb(255,255,255) inset;
+transition: 0.2s;
+}
+.my-btn:hover{
+    background-color: rgb(28 48 53);
+    box-shadow: 0 0 0 rgb(0,0,0), -1px -2px 3px rgb(255,255,255) inset;
 }
 .nav-icons{
+    /* width: 100%; */
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items:center;
     z-index: 555;
-   
+
 
 }
 .nav-icons i{
     font-size: 1.1rem;
     margin-left: 1rem;
     color: white;
+    
+
 }
 .down-head{
 height: 70%;
